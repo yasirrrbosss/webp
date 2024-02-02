@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="zxx" class="uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-20 uk-dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SeiGhost</title>
+        <meta name="description" content="SeiGhost">
+        <meta name="theme-color" content="#741ff5">
+
+        <!-- preload head styles -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8.3.2/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" as="style">
+
+        <!-- <link rel="preload" href="./assets/css/theme/main.min.css" as="style"> -->
+        <link rel="icon" type="image/x-icon" href="./assets/images/ghost/logo.png">
+
+        <!-- preload footer scripts -->
+        <link rel="preload" href="./assets/js/uikit.min.js" as="script">
+        <link rel="preload" href="./assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="./assets/js/jquery.min.js" as="script">
+        <link rel="preload" href="./assets/js/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="./assets/js/feather.min.js" as="script">
+        <link rel="preload" href="./assets/js/typed.min.js" as="script">
+        <link rel="preload" href="./assets/js/anime.min.js" as="script">
+        <link rel="preload" href="./assets/js/app.js" as="script">
+        <link rel="preload" href="./assets/js/data-attr-helper.js" as="script">
+        <link rel="preload" href="./assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="./assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="./assets/js/anime-helper.js" as="script">
+
+        <!-- <link rel="preload" href="./assets/js/anime-helper-defined-timelines.js" as="script"> -->
+
+        <!-- include styles -->
+        <script src="./assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="./assets/css/theme/main.min.css">
+
+        <!-- include scripts -->
+        <script src="./assets/js/uikit.min.js"></script>
+        <script src="./assets/js/uikit-components.js"></script>
+    </head>
+    <body class="uni-body"> 
+
+        <!-- Menu modal -->
+        <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
+            <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
+                <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between" data-uk-height-viewport="offset-bottom: true;">
+                    <div class="uni-mobile-menu-content">
+                        <header class="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
+                            <div class="uk-flex-1">
+                                <button aria-label="Close Menu" class="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle" type="button">
+                                    <i class="uk-icon-small" data-feather="arrow-left"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h5 class="uk-h5 uk-text-uppercase uk-margin-remove">Navigation</h5>
+                            </div>
+                            <div class="uk-flex-1"></div>
+                        </header>
+                        <hr class="uk-margin-remove">
+                        <div class="uk-card uk-card-small">
+                            <div class="uk-panel">
+                                <ul class="uk-nav uk-nav-default">
+                                    <li class="uk-nav-header">Homepages</li>
+                                    <li><a href="#uni_about">About</a></li>
+                                    <li><a href="#uni_whyus">Roadmap</a></li>
+                                    <li><a href="#uni_contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Wrapper start -->
+        <div class="wrap uk-overflow-hidden">
+
+            <!-- Header start -->
+            <header class="uni-header uk-position-top">
+                <div class="uni-header-navbar" data-uk-sticky="top: 70; show-on-up: false; animation: uk-animation-slide-top">
+                    <div class="uk-container">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left uk-flex-1">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove" href=""> 
+                                        <img class="uk-visible" style="width: 60px;" src="./assets/images/ghost/logo.png" alt="Ghost" loading="lazy"> 
+                                        <img class="uk-visible" style="width: 60px;" src="./assets/images/ghost/text.png" alt="Ghost" loading="lazy"> 
+                                </div>
+
+                                <div class="uk-navbar-center"></div>
+
+                                <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                    <ul class="uk-navbar-nav dark:uk-text-gray-10 uk-visible@m" data-uk-scrollspy-nav="closest: li; scroll: true; offset: 40" data-uk-navbar-bound>
+                                        <li><a href="#uni_about">About</a></li>
+                                        <li><a href="#uni_whyus">Ghostway</a></li>
+                                        <li><a href="#uni_contact">Contact</a></li>
+                                    </ul>
+                                    <div class="uk-navbar-item uk-hidden@m">
+                                        <a href="#uni_mobile_menu" data-uk-toggle>
+                                            <span class="uk-icon uk-icon-medium material-icons">menu</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Header end -->
+
+            <!-- Hero start -->
+            <div id="uni_hero" class="uni-hero uk-section uk-padding-remove uk-panel uk-overflow-hidden">
+                <div class="uk-position-top" data-uk-height-viewport="">
+                    <div class="uk-position-cover uk-background-cover uk-opacity-20" data-src="./assets/images/ghost/banner.jpg" data-uk-img></div>
+                </div>
+                <div class="uk-position-top uk-position-z-index-negative uk-overflow-hidden uk-blend-overlay" data-uk-height-viewport="">
+                    <img class="uk-position-top-left uk-position-fixed uk-blur-large" style="left: -4%; top: -4%" width="500" src="./assets/images/gradient-circle.svg" alt="Circle">
+                    <img class="uk-position-bottom-right uk-position-fixed uk-blur-large" style="right: -4%; bottom: -4%" width="500" src="./assets/images/gradient-circle.svg" alt="Circle">
+                </div>
+                <div class="uk-container">
+                    <div class="uk-section uk-flex-center uk-flex-middle" data-uk-height-viewport="offset-top: true;">
+                        <div class="uk-card uk-flex-center uk-text-center">
+                            <div class="uk-panel uk-width-2xlarge@m uk-position-z-index">
+                                <div>
+                                    <img width="250" src="./assets/images/ghost/text.png" alt="Logo Text">
+                                </div>
+                                <p class="uk-text-lead">Unravel the unseen, embrace the spectral👻</p>
+                                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="We are SeiGhost" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="./assets/images/divider-02.svg" alt="Divider"> 
+
+            <!-- about start -->
+            <div id="uni_about" class="uni-about uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid>
+                        <div class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">About SeiGhost</h2>
+                        </div>
+                    </header>
+                    <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
+                        <div class="uk-grid uk-grid-2xlarge uk-grid-3xlarge@m uk-child-width-1-1" data-uk-grid="">
+                            <div>
+                                <div class="uk-panel">
+                                    <div class="uk-grid uk-grid-3xlarge@m uk-flex-middle uk-child-width-1-2@m" data-uk-grid="">
+                                        <div>
+                                            <div class="uk-panel uk-image-middle uk-overflow-hidden uk-radius uk-radius-large@m">
+                                                <img src="./assets/images/ghost/ghostbg.jpg" alt="ghostbg">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="uk-panel">  
+                                                <p class="uk-text-large@m">
+                                                    SeiGhost NFT nestled in the Sei network, unveils a captivating collection comprising 3333 enigmatic NFTs. Beyond their aesthetic allure, these NFTs bring a gamut of utility features for holders, chief among them being the innovative NFT staking mechanism.
+                                                </p> 
+                                                <p class="uk-text-large@m">
+                                                    Through the concept of NFT staking, SeiGhost holders have the opportunity to engage in a dynamic process, where their NFTs serve as a gateway to earning SeiGhost native tokens. This dual-layered functionality not only enhances the intrinsic value of the NFTs but also fosters a sense of active participation within the SeiGhost community.
+                                                </p> 
+                                                <p class="uk-text-large@m">
+                                                    In a move set to elevate the user experience further, SeiGhost is gearing up to unveil an upcoming gambling (plinko) game. This game promises an immersive blend of entertainment and interactivity, amplifying the thrill for NFT holders. As the anticipation builds, SeiGhost continues to carve its niche as a multifaceted ecosystem, seamlessly merging the worlds of NFTs, staking, and gaming on the Sei network.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- about end -->
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="./assets/images/divider-02.svg" alt="Divider"> 
+
+            <!-- Roadmap start -->
+            <div id="uni_whyus" class="uni-whyus uk-section uk-section-xlarge@m uk-panel">
+                <div class="uk-container">
+                    <header class="uk-grid-xsmall uk-flex-center uk-flex-middle uk-grid" data-uk-grid>
+                        <div class="uk-panel uk-text-center">
+                            <h2 class="uk-h3 uk-h1@m">Ghostway</h2>
+                            <p>SeiGhost journey unfolds with a touch of mystery,
+                                no spoilers on day one.
+                                <br> Brace for surprises along the way as we navigate this exciting path together👻</p>
+                        </div>
+                    </header>
+                    <div class="uk-panel uk-margin-medium-top uk-margin-2xlarge-top@m">
+                        <img class="uk-position-top-left uk-text-secondary" width="16" src="./assets/images/objects/circle-01.png" alt="Object" style="top: -16%; left: 8%">
+                        <img class="uk-position-bottom-right uk-text-primary" width="24" src="./assets/images/objects/circle-02.png" alt="Object" style="bottom: 16%; right: -8%">
+                        <img class="uk-position-bottom-left uk-text-muted" width="28" src="./assets/images/objects/x.png" alt="Object" style="bottom: 16%; left: -8%">
+                        <div class="uk-grid uk-child-width-1-3@s" data-uk-grid="masonry: true;">
+                            <div>
+                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                    
+                                    <div class="uk-panel uk-margin-top">
+                                        <h3 class="uk-h5">
+                                            Ghostway I
+                                        </h3>
+                                        <p class="uk-text-muted">
+                                            <ul>
+                                                <li>TBA👻</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5 uk-margin-large-top@m">
+                                    <div class="uk-panel uk-margin-top">
+                                        <h3 class="uk-h5">
+                                            Ghostway 2
+                                        </h3>
+                                        <p class="uk-text-muted">
+                                            <ul>
+                                                <li>TBA👻</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-panel uk-card uk-card-small uk-padding-large-horizontal uk-radius-medium uk-radius-large@m uk-box-shadow-xsmall dark:uk-background-white-5">
+                                
+                                    <div class="uk-panel uk-margin-top">
+                                        <h3 class="uk-h5">
+                                            Ghostway 3
+                                        </h3>
+                                        <p class="uk-text-muted">
+                                            <ul>
+                                                <li>TBA👻</li>
+                                            </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Roadmap end -->  
+
+            <img class="uk-width-2xsmall uk-flex-center uk-margin-auto uk-margin-medium uk-margin-large@m" src="./assets/images/divider-01.svg" alt="Divider"> 
+
+            <!-- cta start -->
+            <div id="uni_contact" class="uni-cta uk-section uk-panel uk-overflow-hidden">
+                <div class="uk-container">
+                    <div class="uk-card uk-flex-center uk-text-center">
+                        <div class="uk-panel uk-width-2xlarge@m uk-position-z-index">
+                            <img class="uk-position-top-left" width="24" src="./assets/images/objects/circle-01.png" alt="Object" style="top: 0%; left: -16%">
+                            <img class="uk-position-bottom-right" width="24" src="./assets/images/objects/x.png" alt="Object" style="bottom: 16%; right: -8%">
+                            <img class="uk-position-top-right" width="40" src="./assets/images/ghost/logo.png" alt="Object" style="top: 0%; right: -16%">
+                            <img class="uk-position-bottom-left" width="48" src="./assets/images/objects/logosei.png" alt="Object" style="bottom: 16%; left: -15%">
+                            <h2 class="uk-h3 uk-heading-d2@m">Get in touch</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cta end -->
+        </div>
+
+        <!-- Wrapper end -->
+
+        <!-- Footer start -->
+        <footer class="uni-footer uk-section uk-section-xlarge@m uk-panel">
+            <div class="uk-container">
+                <div class="uk-panel">
+                    <div class="uk-grid uk-flex-center uk-text-center" data-uk-grid>
+                        <div class="uk-width-large@m">
+                            <div class="uk-panel uk-position-z-index">
+                                <ul class="uk-subnav uk-subnav-small uk-flex-center uk-text-gray-70">
+                                    <li>
+                                        <a href="https://twitter.com/SeiGhostNFT" target="_blank"><span class="uk-icon uk-icon-large@m unicon-logo-twitter"></span></a>
+                                        <a href="https://discord.gg/seighost" target="_blank"><span class="uk-icon-large@m unicon-logo-discord"></span></a>
+                                    </li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-panel uk-text-small uk-margin-medium-top">
+                        <div class="uk-grid uk-child-width-1-1@m uk-flex-center uk-text-center" data-uk-grid> 
+                            <div>
+                                <p class="uk-text-muted">© 2024 SeiGhost. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer end -->
+
+        <!-- include scripts -->
+        <script defer src="./assets/js/jquery.min.js"></script>
+        <script defer src="./assets/js/swiper-bundle.min.js"></script>
+        <script defer src="./assets/js/feather.min.js"></script>
+        <script defer src="./assets/js/typed.min.js"></script>
+        <script defer src="./assets/js/anime.min.js"></script>
+        <script defer src="./assets/js/app.js"></script>
+        <script defer src="./assets/js/data-attr-helper.js"></script>
+        <script defer src="./assets/js/swiper-helper.js"></script>
+        <script defer src="./assets/js/typed-helper.js"></script>
+        <script defer src="./assets/js/anime-helper.js"></script>
+
+        <!-- <script defer src="./assets/js/anime-helper-defined-timelines.js"></script> -->
+    </body>
+</html>
